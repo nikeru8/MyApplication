@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="food_images">
+
+        <item>@drawable/combo1</item>
+        <item>@drawable/combo2</item>
+        <item>@drawable/combo3</item>
+        <item>@drawable/combo4</item>
+        <item>@drawable/combo5</item>
+        <item>@drawable/combo6</item>
+        <item>@drawable/combo7</item>
+        <item>@drawable/combo8</item>
+
+    </array>
+
+    <string-array name="food_image_name">
+        <item>玫瑰松坂</item>
+        <item>花團</item>
+        <item>綿羊豬</item>
+        <item>杏香野菊</item>
+        <item>墨條牛軋</item>
+        <item>千層蝦夷</item>
+        <item>米妃糖</item>
+        <item>大腸頭</item>
+
+
+    </string-array>
+
+
+
+
+</resources>
