@@ -239,6 +239,7 @@
     <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
     <string name="abc_toolbar_collapse_description">Collapse</string>
     <string name="app_name">寬巷子</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="question_1">請問 \u00A0\u00A0\u00A0 \紅泥小染 \u00A0\u00A0\u00A0 是屬於哪一地區的麻辣呢?</string>
     <string name="question_1_radio_a">\u00A0\u00A0四川</string>
     <string name="question_1_radio_b">\u00A0\u00A0台式</string>

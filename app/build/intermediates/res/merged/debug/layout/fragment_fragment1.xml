@@ -1,0 +1,42 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.nikeru8.myapplication.Fragment1">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:background="@drawable/background"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/combo1"
+                android:padding="16dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/combo1"/>
+            <TextView
+                android:layout_gravity="center_horizontal"
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                android:layout_below="@id/combo1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="玫瑰松坂"/>
+
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+</FrameLayout>

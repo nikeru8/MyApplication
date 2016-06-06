@@ -58,8 +58,12 @@ public class Menu extends AppCompatActivity {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
 
-                if (list.get(position) == "---------湯品---------") {
-
+                transaction=manager.beginTransaction();
+                if (list.get(position) == "---------肉類---------") {
+Fragment1 fragment1=new Fragment1();
+                    transaction.replace(R.id.center,fragment1,"fragment1");
+                    transaction.addToBackStack("fragment1");//添加到Activity管理要回退佔中
+                    transaction.commit();
 
                 }
 

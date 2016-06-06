@@ -34,4 +34,7 @@
     <string name="question_3_radio_a">牛肚肉</string>
     <string name="question_3_radio_b">莎朗部位</string>
     <string name="question_3_radio_c">屁股部位</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
