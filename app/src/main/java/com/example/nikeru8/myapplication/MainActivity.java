@@ -16,14 +16,14 @@ public class MainActivity extends AppCompatActivity {
     private TextView m_view_message;
     private Button m_btn_start;
     private TypedArray mFoodImage;//資源檔陣列
-    private int mFoodImageCount;//一共多少張圖片
+    private int mFoodImageCount;//多少張圖片
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        initView();//初始畫面佈局連結
+        initView();
         initFoodImage();
     }
 
@@ -65,6 +65,8 @@ public class MainActivity extends AppCompatActivity {
     private StopRandomTask mStopRandomTask = new StopRandomTask();
 
 
+
+
     private class StartRandomTask implements Runnable {
 
         @Override
@@ -95,6 +97,17 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, photo.class);
         startActivity(intent);
 
+    }
+    //問券活動按鈕
+    public void Ask(View view) {
+Intent intent=new Intent(this,Activity1.class);
+        startActivity(intent);
+    }
+
+   //餐點介紹
+    public void page4(View view) {
+        Intent intent=new Intent(this,Menu.class);
+        startActivity(intent);
     }
 
 

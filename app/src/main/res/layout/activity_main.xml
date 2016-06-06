@@ -46,6 +46,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="拍照活動"/>
+
+            <Button
+                android:text="餐點介紹"
+                android:onClick="page4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
         </LinearLayout>
         \<LinearLayout
         android:layout_width="match_parent"
