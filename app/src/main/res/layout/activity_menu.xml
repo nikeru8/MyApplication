@@ -12,12 +12,22 @@
     tools:context="com.example.nikeru8.myapplication.Menu"
     android:background="@drawable/background">
 
-    <Spinner
+
+    <LinearLayout
+        android:background="@android:color/white"
+        android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/spinner"
-        android:layout_gravity="center_horizontal"
-         />
+        android:layout_height="wrap_content">
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner"
+            android:layout_gravity="center_horizontal"
+
+            />
+
+    </LinearLayout>
+
 
     <LinearLayout
         android:id="@+id/center"

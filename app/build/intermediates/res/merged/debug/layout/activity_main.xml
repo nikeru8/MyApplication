@@ -10,14 +10,14 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.nikeru8.myapplication.MainActivity"
-    android:background="@drawable/background">
+    android:background="@drawable/background4">
 
 
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/word1" />
+        android:src="@drawable/title" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -50,6 +50,11 @@
             <Button
                 android:text="餐點介紹"
                 android:onClick="page4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Button
+                android:text="餐館地圖"
+                android:onClick="mapclick"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
         </LinearLayout>

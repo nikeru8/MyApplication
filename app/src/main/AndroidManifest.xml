@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.nikeru8.myapplication">
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
 
     <application
         android:name=".MyApp"
@@ -29,7 +30,8 @@
         <activity
             android:name=".Activity3"
             android:screenOrientation="portrait" />
-        <activity android:name=".Menu"></activity>
+        <activity android:name=".Menu" />
+        <activity android:name=".Map"></activity>
     </application>
 
 </manifest>

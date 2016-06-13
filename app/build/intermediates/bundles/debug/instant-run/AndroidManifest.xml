@@ -8,6 +8,8 @@
         android:minSdkVersion="16"
         android:targetSdkVersion="23" />
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         name="com.example.nikeru8.myapplication.MyApp"
         android:name="com.android.tools.fd.runtime.BootstrapApplication"
@@ -37,6 +39,7 @@
             android:name="com.example.nikeru8.myapplication.Activity3"
             android:screenOrientation="portrait" />
         <activity android:name="com.example.nikeru8.myapplication.Menu" />
+        <activity android:name="com.example.nikeru8.myapplication.Map" />
     </application>
 
 </manifest>

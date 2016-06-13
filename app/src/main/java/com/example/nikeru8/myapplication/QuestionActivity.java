@@ -5,11 +5,12 @@ import android.os.Bundle;
 import android.support.annotation.IntDef;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.TextView;
-
+import android.widget.Toast;
 
 
 // abstract activity 不需要宣告在 manifest
@@ -35,6 +36,30 @@ public abstract class QuestionActivity extends AppCompatActivity {
         initBackNextButtons();
         Log.d(this.toString(), "onCreate , index = " + sQuestionIndex);
     }
+    @Override
+    public boolean onCreateOptionsMenu(android.view.Menu menu) {
+
+        menu.add(0, 1, android.view.Menu.NONE, "首頁");
+
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+
+            case 1:
+                Intent intent=new Intent(this,MainActivity.class);
+                startActivity(intent);
+                Toast.makeText(this, "首頁", Toast.LENGTH_SHORT).show();
+                break;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+
+
+
 
     // 抑制 setVisibility() 錯誤訊息
     @SuppressWarnings("ResourceType")

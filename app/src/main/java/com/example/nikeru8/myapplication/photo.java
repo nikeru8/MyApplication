@@ -5,9 +5,18 @@ import android.graphics.Bitmap;
 import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.Toast;
+
+import android.content.Context;
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.widget.Toast;
 
 public class photo extends AppCompatActivity {
     private LinearLayout layout;
@@ -22,6 +31,28 @@ public class photo extends AppCompatActivity {
         setContentView(R.layout.activity_photo);
         init();
     }
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+
+        menu.add(0, 2, Menu.NONE, "首頁");
+
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+
+            case 2:
+                Intent intent=new Intent(this,MainActivity.class);
+                startActivity(intent);
+                Toast.makeText(this, "首頁", Toast.LENGTH_SHORT).show();
+                break;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+
 
     public void init() {
         imageView = (ImageView) findViewById(R.id.Photo_Place);

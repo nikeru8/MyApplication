@@ -2,12 +2,15 @@ package com.example.nikeru8.myapplication;
 
 import android.content.Intent;
 import android.content.res.TypedArray;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.os.Handler;
+
+import java.net.URI;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -108,6 +111,12 @@ Intent intent=new Intent(this,Activity1.class);
     public void page4(View view) {
         Intent intent=new Intent(this,Menu.class);
         startActivity(intent);
+    }
+    //餐館地圖
+    public void mapclick(View view){
+        Intent intent=new Intent(this,Map.class);
+        startActivity(intent);
+
     }
 
 
