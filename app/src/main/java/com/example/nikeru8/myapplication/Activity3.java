@@ -5,6 +5,11 @@ import android.content.Intent;
 import android.support.v7.app.AlertDialog;
 import android.view.View;
 
+import com.example.nikeru8.myapplication.Question.QuestionActivity;
+import com.example.nikeru8.myapplication.Question.QuestionAdapter;
+import com.example.nikeru8.myapplication.Question.QuestionAdapterFactory;
+import com.example.nikeru8.myapplication.Question.UserAnswers;
+
 
 public class Activity3 extends QuestionActivity {
 

@@ -10,10 +10,14 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
 
+    <android:uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <android:uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <application
         android:name="com.example.nikeru8.myapplication.MyApp"
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/word1"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
@@ -26,7 +30,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.nikeru8.myapplication.rder" />
         <activity android:name="com.example.nikeru8.myapplication.photo" />
         <activity
             android:name="com.example.nikeru8.myapplication.Activity1"
@@ -39,6 +42,7 @@
             android:screenOrientation="portrait" />
         <activity android:name="com.example.nikeru8.myapplication.Menu" />
         <activity android:name="com.example.nikeru8.myapplication.Map" />
+        <activity android:name="com.example.nikeru8.myapplication.forfun.fun" />
     </application>
 
 </manifest>

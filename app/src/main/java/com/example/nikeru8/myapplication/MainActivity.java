@@ -10,7 +10,7 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.os.Handler;
 
-import java.net.URI;
+import com.example.nikeru8.myapplication.forfun.fun;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -69,7 +69,6 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-
     private class StartRandomTask implements Runnable {
 
         @Override
@@ -94,6 +93,18 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    //最新消息
+    public void news(View view){
+Uri uri=Uri.parse("https://www.facebook.com/QuanAlley/?fref=ts");
+        Intent it=new Intent(Intent.ACTION_VIEW,uri);
+        startActivity(it);
+
+
+
+//        Uri uri = Uri.parse("mailto:nikeru888@hotmail.com");
+//        Intent it = new Intent(Intent.ACTION_SENDTO, uri);
+//        startActivity(it);
+    }
 
     //拍照活動按鈕
     public void ActivityForPhoto(View view) {
@@ -117,6 +128,21 @@ Intent intent=new Intent(this,Activity1.class);
         Intent intent=new Intent(this,Map.class);
         startActivity(intent);
 
+    }
+
+    //連絡我們
+    public void contactus(View view){
+        Uri uri = Uri.parse("mailto:nikeru888@hotmail.com");
+        Intent it = new Intent(Intent.ACTION_SENDTO, uri);
+        startActivity(it);
+
+
+
+    }
+
+    public void fun(View view) {
+        Intent intent=new Intent(this,fun.class);
+        startActivity(intent);
     }
 
 

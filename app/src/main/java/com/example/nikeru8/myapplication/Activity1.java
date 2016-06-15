@@ -1,6 +1,8 @@
 package com.example.nikeru8.myapplication;
 
 
+import com.example.nikeru8.myapplication.Question.QuestionActivity;
+
 public class Activity1 extends QuestionActivity {
 
     @Override

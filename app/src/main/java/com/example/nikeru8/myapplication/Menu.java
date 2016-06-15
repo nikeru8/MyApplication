@@ -51,7 +51,7 @@ public class Menu extends AppCompatActivity {
         switch (item.getItemId()) {
 
             case 1:
-                Intent intent=new Intent(this,MainActivity.class);
+                Intent intent = new Intent(this, MainActivity.class);
                 startActivity(intent);
                 Toast.makeText(this, "首頁", Toast.LENGTH_SHORT).show();
                 break;
@@ -83,45 +83,50 @@ public class Menu extends AppCompatActivity {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
 
-                transaction=manager.beginTransaction();
+                transaction = manager.beginTransaction();
 
-                if(list.get(position)=="---------湯品---------"){
+                Fragment1 fragment1 = new Fragment1();
+                Fragment2 fragment2 = new Fragment2();
+                Fragment3 fragment3 = new Fragment3();
+                Fragment4 fragment4 = new Fragment4();
+                Fragment5 fragment5 = new Fragment5();
 
-                    Fragment2 fragment2=new Fragment2();
-                    transaction.replace(R.id.center,fragment2,"fragment2");
-                    transaction.addToBackStack("fragment2");//添加到Activity管理要回退佔中
+
+                if (list.get(position) == "---------湯品---------") {
 
 
-
-                }
-                else if (list.get(position) == "---------肉類---------") {
-                    Fragment1 fragment1=new Fragment1();
-                    transaction.replace(R.id.center,fragment1,"fragment1");
-                    transaction.addToBackStack("fragment1");//添加到Activity管理要回退佔中
+                    transaction.replace(R.id.center, fragment2, "fragment2");
 
 
 
-                }
-                else if (list.get(position) == "---------創意料理---------") {
-                    Fragment3 fragment3=new Fragment3();
-                    transaction.replace(R.id.center,fragment3,"fragment3");
-                    transaction.addToBackStack("fragment3");//添加到Activity管理要回退佔中
+                } else if (list.get(position) == "---------肉類---------") {
 
 
 
-                }
-                else if (list.get(position) == "---------蔬菜、海鮮---------") {
-                    Fragment4 fragment4=new Fragment4();
-                    transaction.replace(R.id.center,fragment4,"fragment4");
-                    transaction.addToBackStack("fragment4");//添加到Activity管理要回退佔中
+                    transaction.replace(R.id.center, fragment1, "fragment1");
 
 
 
-                }
-                else if (list.get(position) =="---------飲料、甜點---------") {
-                    Fragment5 fragment5=new Fragment5();
-                    transaction.replace(R.id.center,fragment5,"fragment5");
-                    transaction.addToBackStack("fragment5");//添加到Activity管理要回退佔中
+                } else if (list.get(position) == "---------創意料理---------") {
+
+
+
+                    transaction.replace(R.id.center, fragment3, "fragment3");
+
+
+
+                } else if (list.get(position) == "---------蔬菜、海鮮---------") {
+
+
+
+                    transaction.replace(R.id.center, fragment4, "fragment4");
+
+
+
+                } else if (list.get(position) == "---------飲料、甜點---------") {
+
+
+                    transaction.replace(R.id.center, fragment5, "fragment5");
 
 
 

@@ -2,60 +2,53 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\nikeru8\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.3.0\support-annotations-23.3.0.jar"
+        jar="C:\Users\nikeru8\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit2\retrofit\2.0.2\43eeae0b9fb087bb3194ba59ab63a38a32fbf3e\retrofit-2.0.2.jar"
         jumboMode="true"
         revision="23.0.3"
-        sha1="db7791d75a07fef9844d06236c1c59ba7bf6997c">
-        <dex dex="C:\Users\nikeru8\AndroidStudioProjects\MyApplication3\app\build\intermediates\pre-dexed\debug\support-annotations-23.3.0_f7335645625bbea563f3970c685f13f4b3503c08.jar" />
+        sha1="043eeae0b9fb087bb3194ba59ab63a38a32fbf3e">
+        <dex dex="C:\Users\nikeru8\AndroidStudioProjects\MyApplication3-2016-06-15\MyApplication3\app\build\intermediates\transforms\dex\debug\folders\1000\10\retrofit-2.0.2_1593c7f587373c9e989963b03559b456a078b6b3\classes.dex" />
     </item>
     <item
-        jar="C:\Users\nikeru8\AndroidStudioProjects\MyApplication3\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.3.0\jars\classes.jar"
+        jar="C:\Users\nikeru8\.gradle\caches\modules-2\files-2.1\com.github.bumptech.glide\glide\3.7.0\9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4\glide-3.7.0.jar"
         jumboMode="true"
         revision="23.0.3"
-        sha1="23be6993826b8fd88bbc8d14928bb3b8960d3d4e">
-        <dex dex="C:\Users\nikeru8\AndroidStudioProjects\MyApplication3\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-23.3.0_ad8852f19c404047957e7a42865c6f8c567e3faf.jar" />
+        sha1="9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4">
+        <dex dex="C:\Users\nikeru8\AndroidStudioProjects\MyApplication3-2016-06-15\MyApplication3\app\build\intermediates\transforms\dex\debug\folders\1000\10\glide-3.7.0_1054835ab1d39291985202832d3e74b44a21e914\classes.dex" />
     </item>
     <item
-        jar="C:\Users\nikeru8\AndroidStudioProjects\MyApplication3\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\jars\classes.jar"
+        jar="C:\Users\nikeru8\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.6.1\b9d63507329a7178e026fc334f87587ee5070ac5\gson-2.6.1.jar"
         jumboMode="true"
         revision="23.0.3"
-        sha1="8a034dd16c0dfd75fe86c52c2cd581592acc684a">
-        <dex dex="C:\Users\nikeru8\AndroidStudioProjects\MyApplication3\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-23.3.0_b7a0f8b064af4c469c4a4f54f153935ce19547ff.jar" />
+        sha1="b9d63507329a7178e026fc334f87587ee5070ac5">
+        <dex dex="C:\Users\nikeru8\AndroidStudioProjects\MyApplication3-2016-06-15\MyApplication3\app\build\intermediates\transforms\dex\debug\folders\1000\10\gson-2.6.1_ba16c671a7bae8ebd106745de1e2e1ac2fc55129\classes.dex" />
     </item>
     <item
-        jar="C:\Users\nikeru8\AndroidStudioProjects\MyApplication3\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.3.0\jars\classes.jar"
+        jar="C:\Users\nikeru8\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.6.0\98476622f10715998eacf9240d6b479f12c66143\okio-1.6.0.jar"
         jumboMode="true"
         revision="23.0.3"
-        sha1="a0b5d60246cd9d4f3f2443611b3b4c25265840b5">
-        <dex dex="C:\Users\nikeru8\AndroidStudioProjects\MyApplication3\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-23.3.0_17be92de3679d03c12e50690068ba5388b7f2729.jar" />
+        sha1="98476622f10715998eacf9240d6b479f12c66143">
+        <dex dex="C:\Users\nikeru8\AndroidStudioProjects\MyApplication3-2016-06-15\MyApplication3\app\build\intermediates\transforms\dex\debug\folders\1000\10\okio-1.6.0_566cf5ec8b4c9cfe203354cc8931ec961c520504\classes.dex" />
     </item>
     <item
-        jar="C:\Users\nikeru8\AndroidStudioProjects\MyApplication3\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.3.0\jars\classes.jar"
+        jar="C:\Users\nikeru8\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp\3.2.0\f7873a2ebde246a45c2a8d6f3247108b4c88a879\okhttp-3.2.0.jar"
         jumboMode="true"
         revision="23.0.3"
-        sha1="1b8e03daaa43fb0a4cd57e378167c2fd70454c1e">
-        <dex dex="C:\Users\nikeru8\AndroidStudioProjects\MyApplication3\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-23.3.0_3c6e9d3413210c8b0ff2e8772f2c067a38e7775b.jar" />
+        sha1="f7873a2ebde246a45c2a8d6f3247108b4c88a879">
+        <dex dex="C:\Users\nikeru8\AndroidStudioProjects\MyApplication3-2016-06-15\MyApplication3\app\build\intermediates\transforms\dex\debug\folders\1000\10\okhttp-3.2.0_806a51063a833c78a6ae6a094edfd3cbed4aaf36\classes.dex" />
     </item>
     <item
-        jar="C:\Users\nikeru8\AndroidStudioProjects\MyApplication3\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\jars\libs\internal_impl-23.3.0.jar"
+        jar="C:\Users\nikeru8\AndroidStudioProjects\MyApplication3-2016-06-15\MyApplication3\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.3.0\jars\classes.jar"
         jumboMode="true"
         revision="23.0.3"
-        sha1="4da5a4d697d32497c6f85567a5112e62fdfd0676">
-        <dex dex="C:\Users\nikeru8\AndroidStudioProjects\MyApplication3\app\build\intermediates\pre-dexed\debug\internal_impl-23.3.0_df2c0e85a1cfc94b52fb83d708460a1a926e0d3a.jar" />
+        sha1="debf30ce0a7560396b6235edef77e447006454c2">
+        <dex dex="C:\Users\nikeru8\AndroidStudioProjects\MyApplication3-2016-06-15\MyApplication3\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-23.3.0_25b06d681aa7031ea6f90aff439ef7bc450966d5\classes.dex" />
     </item>
     <item
-        jar="C:\Users\nikeru8\AndroidStudioProjects\MyApplication3\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jar="C:\Users\nikeru8\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit2\converter-gson\2.0.2\f8d87f15b94b8d74e7ccf61d7eedb558811cdb30\converter-gson-2.0.2.jar"
         jumboMode="true"
         revision="23.0.3"
-        sha1="8b92d5951498537402eb87007a04a067345c77bb">
-        <dex dex="C:\Users\nikeru8\AndroidStudioProjects\MyApplication3\app\build\intermediates\pre-dexed\debug\instant-run-bootstrap_6931d64b565d7745e95c82191fc5a22b8eb8e448.jar" />
-    </item>
-    <item
-        jar="C:\Users\nikeru8\AndroidStudioProjects\MyApplication3\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
-        jumboMode="true"
-        revision="23.0.3"
-        sha1="296948fd09242c55cd4d0b9a9b023a6625372ca8">
-        <dex dex="C:\Users\nikeru8\AndroidStudioProjects\MyApplication3\app\build\intermediates\pre-dexed\debug\instant-run_27ea40eee2973bb450b2e1f4dac3336f20091cde.jar" />
+        sha1="f8d87f15b94b8d74e7ccf61d7eedb558811cdb30">
+        <dex dex="C:\Users\nikeru8\AndroidStudioProjects\MyApplication3-2016-06-15\MyApplication3\app\build\intermediates\transforms\dex\debug\folders\1000\10\converter-gson-2.0.2_1c4ac4b99fbfa83be7b294716691494147514490\classes.dex" />
     </item>
 
 </items>

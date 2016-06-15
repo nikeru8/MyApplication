@@ -3,6 +3,8 @@ package com.example.nikeru8.myapplication;
 import android.app.Application;
 import android.content.Context;
 
+import com.example.nikeru8.myapplication.Question.UserAnswers;
+
 /**
  * Created by nikeru8 on 2016/5/19.
  */

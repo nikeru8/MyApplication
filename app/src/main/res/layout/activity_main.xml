@@ -10,7 +10,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.nikeru8.myapplication.MainActivity"
-    android:background="@drawable/background4">
+    android:background="@drawable/background">
 
 
 
@@ -32,9 +32,9 @@
                 android:id="@+id/btn_order"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="order"
+                android:onClick="news"
                 android:shadowColor="@android:color/black"
-                android:text="外帶點餐" />
+                android:text="最新消息" />
 
             <Button
                 android:layout_width="wrap_content"
@@ -59,13 +59,17 @@
                 android:layout_height="wrap_content" />
 
             <Button
+                android:onClick="fun"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="悠遊台北未完成"/>
            <Button
+
+               android:onClick="contactus"
                android:layout_width="wrap_content"
                android:layout_height="wrap_content"
-               android:text="連絡我們"/>
+               android:text="聯絡我們"
+               />
         </LinearLayout>
         \<LinearLayout
         android:layout_width="match_parent"
