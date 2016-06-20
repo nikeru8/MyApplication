@@ -17,7 +17,7 @@ public class Question {
         this.optionC = optionC;
     }
 
-    // getter
+    // getterr
     public String getQuestion() {
         return question;
     }
