@@ -10,7 +10,10 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.nikeru8.myapplication.MainActivity"
-    android:background="@drawable/background">
+    android:background="@drawable/backgroundtext1">
+
+
+
 
 
 
@@ -62,7 +65,7 @@
                 android:onClick="fun"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="悠遊台北未完成"/>
+                android:text="悠遊台北"/>
            <Button
 
                android:onClick="contactus"
@@ -95,7 +98,7 @@
             android:layout_width="wrap_content"
             android:layout_height="0dp"
             android:layout_weight="2"
-            android:text="不知道吃什麼嗎？讓我們幫您做個小決定吧！\n-選擇小幫手"
+            android:text="寬巷子歡迎您！\n-選擇小幫手"
             android:textColor="@android:color/white" />
 
         <LinearLayout

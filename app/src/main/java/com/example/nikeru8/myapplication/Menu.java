@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -33,11 +34,17 @@ public class Menu extends AppCompatActivity {
         transaction = manager.beginTransaction();
         transaction.commit();
 
-
+        ActionBarView();
         init();
         initalAdapter();
     }
 
+    public void ActionBarView(){
+
+        ActionBar actionBar=this.getSupportActionBar();
+        actionBar.setBackgroundDrawable(getResources().getDrawable(R.drawable.backgroundtext2));
+
+    }
     @Override
     public boolean onCreateOptionsMenu(android.view.Menu menu) {
 
@@ -53,7 +60,9 @@ public class Menu extends AppCompatActivity {
             case 1:
                 Intent intent = new Intent(this, MainActivity.class);
                 startActivity(intent);
+                onDestroy();
                 Toast.makeText(this, "首頁", Toast.LENGTH_SHORT).show();
+                this.finish();
                 break;
         }
         return super.onOptionsItemSelected(item);

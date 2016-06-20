@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 
 import android.content.Context;
@@ -22,11 +23,12 @@ public class Map extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_map);
+        Log.d(this.toString(),"onCreate,Map");
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        menu.add(0, 1, Menu.NONE, "上一頁");
+        menu.add(0, 1, Menu.NONE, "首頁");
 
         return super.onCreateOptionsMenu(menu);
     }
@@ -39,6 +41,7 @@ public class Map extends AppCompatActivity {
                 Intent intent=new Intent(this,MainActivity.class);
                 startActivity(intent);
                 Toast.makeText(this, "首頁", Toast.LENGTH_SHORT).show();
+                this.finish();
                 break;
         }
         return super.onOptionsItemSelected(item);
@@ -85,5 +88,9 @@ public class Map extends AppCompatActivity {
         startActivity(it);
     }
 
-
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Log.d(this.toString(),"onDestroy,Map");
+    }
 }

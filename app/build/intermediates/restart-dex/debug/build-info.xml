@@ -4,26 +4,36 @@
     api-level="21"
     density="xxhdpi"
     format="7"
-    timestamp="22187703009681" >
+    timestamp="6085420282504" >
 
     <task
         name="javac"
-        duration="655" />
+        duration="3525" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="163" />
+        duration="176" />
     <task
         name="verifier"
-        duration="38" />
+        duration="42" />
 
     <artifact
-        location="C:\Users\nikeru8\AndroidStudioProjects\MyApplication3-2016-06-15\MyApplication3\app\build\outputs\apk\app-debug.apk"
-        type="MAIN" />
+        location="C:\Users\nikeru8\AndroidStudioProjects\MyApplication3-2016-06-15\MyApplication3\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_9\classes.dex"
+        type="DEX" />
 
-    <build timestamp="22187703009681" >
+    <build timestamp="4557504613049" >
+        <artifact
+            location="C:\Users\nikeru8\AndroidStudioProjects\MyApplication3-2016-06-15\MyApplication3\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_9\classes.dex"
+            type="DEX" />
+    </build>
+    <build timestamp="6085420282504" >
+        <artifact
+            location="C:\Users\nikeru8\AndroidStudioProjects\MyApplication3-2016-06-15\MyApplication3\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_9\classes.dex"
+            type="DEX" />
+    </build>
+    <build timestamp="27333723258330" >
         <artifact
             location="C:\Users\nikeru8\AndroidStudioProjects\MyApplication3-2016-06-15\MyApplication3\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />

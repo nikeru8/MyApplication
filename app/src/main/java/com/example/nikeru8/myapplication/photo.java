@@ -3,8 +3,10 @@ package com.example.nikeru8.myapplication;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.provider.MediaStore;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
@@ -29,8 +31,20 @@ public class photo extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_photo);
+        Log.d(photo.this.toString(),"PHOTO,onCreate");
         init();
+        ActionBarView();
     }
+
+
+    public void ActionBarView(){
+
+        ActionBar actionBar=this.getSupportActionBar();
+        actionBar.setBackgroundDrawable(getResources().getDrawable(R.drawable.backgroundtext2));
+
+    }
+
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
 
@@ -47,6 +61,7 @@ public class photo extends AppCompatActivity {
                 Intent intent=new Intent(this,MainActivity.class);
                 startActivity(intent);
                 Toast.makeText(this, "首頁", Toast.LENGTH_SHORT).show();
+                this.finish();
                 break;
         }
         return super.onOptionsItemSelected(item);
@@ -97,5 +112,26 @@ layout=(LinearLayout)findViewById(R.id.tv_layout);
         }
 
     }
+
+    @Override
+    protected void onPause() {
+
+        super.onPause();
+    }
+
+    @Override
+    protected void onStop() {
+
+        super.onStop();
+        Log.d(photo.this.toString(),"PHOTO,onStop");
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Log.d(photo.this.toString(),"PHOTO,onDestroy");
+    }
+
+
 
 }

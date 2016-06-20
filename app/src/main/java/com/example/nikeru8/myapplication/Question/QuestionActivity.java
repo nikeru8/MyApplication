@@ -3,6 +3,7 @@ package com.example.nikeru8.myapplication.Question;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.IntDef;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.MenuItem;
@@ -39,6 +40,15 @@ public abstract class QuestionActivity extends AppCompatActivity {
         initQuestions();
         initBackNextButtons();
         Log.d(this.toString(), "onCreate , index = " + sQuestionIndex);
+    ActionBarView();
+    }
+
+
+    public void ActionBarView(){
+
+        ActionBar actionBar=this.getSupportActionBar();
+        actionBar.setBackgroundDrawable(getResources().getDrawable(R.drawable.backgroundtext2));
+
     }
     @Override
     public boolean onCreateOptionsMenu(android.view.Menu menu) {

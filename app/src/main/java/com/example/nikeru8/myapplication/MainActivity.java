@@ -3,6 +3,7 @@ package com.example.nikeru8.myapplication;
 import android.content.Intent;
 import android.content.res.TypedArray;
 import android.net.Uri;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -28,6 +29,16 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         initView();
         initFoodImage();
+ActionBarView();
+
+
+
+    }
+    public void ActionBarView(){
+
+        ActionBar actionBar=this.getSupportActionBar();
+        actionBar.setBackgroundDrawable(getResources().getDrawable(R.drawable.backgroundtext2));
+
     }
 
     private void initFoodImage() {
@@ -58,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void start(View view) {
         m_Handler.post(mStartRandomTask);//立即執行任務
-        m_Handler.postDelayed(mStopRandomTask, 3000);//3秒後執行任務 停止隨機換圖
+        m_Handler.postDelayed(mStopRandomTask,10000);//3秒後執行任務 停止隨機換圖
         m_btn_start.setEnabled(false);//案下去之後,按鈕失效變灰色
 
     }
@@ -66,7 +77,6 @@ public class MainActivity extends AppCompatActivity {
     //建立任務物件
     private StartRandomTask mStartRandomTask = new StartRandomTask();
     private StopRandomTask mStopRandomTask = new StopRandomTask();
-
 
 
     private class StartRandomTask implements Runnable {
@@ -78,7 +88,7 @@ public class MainActivity extends AppCompatActivity {
             //換圖
             m_view_food.setBackground(mFoodImage.getDrawable(index));
             //0.1秒後再執行一次本任務
-            m_Handler.postDelayed(this, 100);
+            m_Handler.postDelayed(this, 1000);
         }
     }
 
@@ -86,7 +96,7 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void run() {
             //取消任務startRandomTask
-            m_Handler.removeCallbacks(mStartRandomTask);
+            //m_Handler.removeCallbacks(mStartRandomTask);
             //start按鈕變成可按
             m_btn_start.setEnabled(true);
 
@@ -94,16 +104,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     //最新消息
-    public void news(View view){
-Uri uri=Uri.parse("https://www.facebook.com/QuanAlley/?fref=ts");
-        Intent it=new Intent(Intent.ACTION_VIEW,uri);
+    public void news(View view) {
+        Uri uri = Uri.parse("https://www.facebook.com/QuanAlley/?fref=ts");
+        Intent it = new Intent(Intent.ACTION_VIEW, uri);
         startActivity(it);
 
 
 
-//        Uri uri = Uri.parse("mailto:nikeru888@hotmail.com");
-//        Intent it = new Intent(Intent.ACTION_SENDTO, uri);
-//        startActivity(it);
     }
 
     //拍照活動按鈕
@@ -112,36 +119,38 @@ Uri uri=Uri.parse("https://www.facebook.com/QuanAlley/?fref=ts");
         startActivity(intent);
 
     }
+
     //問券活動按鈕
     public void Ask(View view) {
-Intent intent=new Intent(this,Activity1.class);
+        Intent intent = new Intent(this, Activity1.class);
         startActivity(intent);
     }
 
-   //餐點介紹
+    //餐點介紹
     public void page4(View view) {
-        Intent intent=new Intent(this,Menu.class);
+        Intent intent = new Intent(this, Menu.class);
         startActivity(intent);
     }
+
     //餐館地圖
-    public void mapclick(View view){
-        Intent intent=new Intent(this,Map.class);
+    public void mapclick(View view) {
+        Intent intent = new Intent(this, Map.class);
         startActivity(intent);
 
     }
 
     //連絡我們
-    public void contactus(View view){
+    public void contactus(View view) {
         Uri uri = Uri.parse("mailto:nikeru888@hotmail.com");
         Intent it = new Intent(Intent.ACTION_SENDTO, uri);
         startActivity(it);
 
 
-
     }
 
+    //悠遊台北按鈕
     public void fun(View view) {
-        Intent intent=new Intent(this,fun.class);
+        Intent intent = new Intent(this, fun.class);
         startActivity(intent);
     }
 
