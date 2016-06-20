@@ -4,39 +4,39 @@
     api-level="21"
     density="xxhdpi"
     format="7"
-    timestamp="6085420282504" >
+    timestamp="43316205048018" >
 
     <task
         name="javac"
-        duration="3525" />
+        duration="167" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="176" />
+        duration="22" />
     <task
         name="verifier"
-        duration="42" />
+        duration="2" />
 
     <artifact
         location="C:\Users\nikeru8\AndroidStudioProjects\MyApplication3-2016-06-15\MyApplication3\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_9\classes.dex"
         type="DEX" />
 
-    <build timestamp="4557504613049" >
-        <artifact
-            location="C:\Users\nikeru8\AndroidStudioProjects\MyApplication3-2016-06-15\MyApplication3\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_9\classes.dex"
-            type="DEX" />
-    </build>
-    <build timestamp="6085420282504" >
-        <artifact
-            location="C:\Users\nikeru8\AndroidStudioProjects\MyApplication3-2016-06-15\MyApplication3\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_9\classes.dex"
-            type="DEX" />
-    </build>
-    <build timestamp="27333723258330" >
+    <build timestamp="39051712311540" >
         <artifact
             location="C:\Users\nikeru8\AndroidStudioProjects\MyApplication3-2016-06-15\MyApplication3\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />
+    </build>
+    <build timestamp="43117380846112" >
+        <artifact
+            location="C:\Users\nikeru8\AndroidStudioProjects\MyApplication3-2016-06-15\MyApplication3\app\build\intermediates\res\resources-debug.ap_"
+            type="RESOURCES" />
+    </build>
+    <build timestamp="43316205048018" >
+        <artifact
+            location="C:\Users\nikeru8\AndroidStudioProjects\MyApplication3-2016-06-15\MyApplication3\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_9\classes.dex"
+            type="DEX" />
     </build>
 
 </instant-run>

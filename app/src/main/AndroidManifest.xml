@@ -2,11 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.nikeru8.myapplication">
 
-
-
     <uses-permission android:name="android.permission.INTERNET" />
-
-
 
     <application
         android:name=".MyApp"
@@ -34,9 +30,10 @@
         <activity
             android:name=".Activity3"
             android:screenOrientation="portrait" />
-        <activity android:name=".Menu" />
+        <activity android:name=".Menuold.Menu" />
         <activity android:name=".Map" />
-        <activity android:name=".forfun.fun"></activity>
+        <activity android:name=".forfun.fun" />
+        <activity android:name=".Menu2"></activity>
     </application>
 
 </manifest>

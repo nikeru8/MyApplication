@@ -37,9 +37,10 @@
         <activity
             android:name="com.example.nikeru8.myapplication.Activity3"
             android:screenOrientation="portrait" />
-        <activity android:name="com.example.nikeru8.myapplication.Menu" />
+        <activity android:name="com.example.nikeru8.myapplication.Menuold.Menu" />
         <activity android:name="com.example.nikeru8.myapplication.Map" />
         <activity android:name="com.example.nikeru8.myapplication.forfun.fun" />
+        <activity android:name="com.example.nikeru8.myapplication.Menu2" />
     </application>
 
 </manifest>

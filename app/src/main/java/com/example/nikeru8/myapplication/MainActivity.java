@@ -128,7 +128,7 @@ ActionBarView();
 
     //餐點介紹
     public void page4(View view) {
-        Intent intent = new Intent(this, Menu.class);
+        Intent intent = new Intent(this, Menu2.class);
         startActivity(intent);
     }
 
